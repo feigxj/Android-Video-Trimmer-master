@@ -47,7 +47,7 @@ public class TrimVideoUtil {
     public static final int MIN_TIME_FRAME = 5;
     private static final int thumb_Width = (DeviceUtil.getDeviceWidth() - UnitConverter.dpToPx(20)) / VIDEO_MAX_DURATION;
     private static final int thumb_Height = UnitConverter.dpToPx(60);
-    private static final long one_frame_time = 1000000;
+    private static final long one_frame_time = 1000000;//按照秒为单位
 
     public static void trimVideo(Context context, String inputFile, String outputFile, long startMs, long endMs, final OnTrimVideoListener callback) {
         final String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(new Date());
